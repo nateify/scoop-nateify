@@ -1,10 +1,10 @@
 {
-    "version": "24.0",
+    "version": "24",
     "description": "Software to manage your OpenPS2Loader game library on Windows",
     "homepage": "https://oplmanager.com/site",
     "license": "Freeware",
-    "url": "https://static.oplmanager.com/releases/OPL_Manager_V24.0.zip",
-    "hash": "c3450c68d8b0f04215702ed88767bd48cb13420d2cdef9b294a91f2e66339d0c",
+    "url": "https://static.oplmanager.com/releases/OPL_Manager_V24.zip",
+    "hash": "md5:178a638dcb83bcf1e5fcdd41fb45138d",
     "pre_install": "if (!(Test-Path \"$persist_dir\\OPLManager.ini\")) { New-Item -ItemType File \"$dir\\OPLManager.ini\" | Out-Null }",
     "shortcuts": [
         [
@@ -19,10 +19,14 @@
         "OPLManager.ini"
     ],
     "checkver": {
-        "url": "https://oplmanager.com/site/?changelog",
-        "regex": "V([\\d.]+)"
+        "url": "https://oplmanager.com/site",
+        "regex": "Version: .*>(?<filename>[\\w_]+V(?<version>[\\d.]+)\\.zip)"
     },
     "autoupdate": {
-        "url": "https://static.oplmanager.com/releases/OPL_Manager_V$version.zip"
+        "url": "https://static.oplmanager.com/releases/$matchFilename",
+        "hash": {
+            "url": "https://oplmanager.com/site/index.php",
+            "find": "MD5: $md5"
+        }
     }
 }
