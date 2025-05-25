@@ -5,13 +5,13 @@
     "license": "Freeware",
     "url": "https://static.oplmanager.com/releases/OPL_Manager_V24.zip",
     "hash": "md5:178a638dcb83bcf1e5fcdd41fb45138d",
-    "pre_install": "if (!(Test-Path \"$persist_dir\\OPLManager.ini\")) { New-Item -ItemType File \"$dir\\OPLManager.ini\" | Out-Null }",
     "shortcuts": [
         [
             "OPL_Manager.exe",
             "OPL Manager"
         ]
     ],
+    "pre_install": "@(\"cache_hdl_local.dat\",\"hdl_log.txt\",\"OPLManager.ini\") | ForEach-Object {if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$_\" -ItemType File > $null }}",
     "persist": [
         "hdl_hdd",
         "cache_hdl_local.dat",
