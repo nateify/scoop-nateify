@@ -1,12 +1,12 @@
 {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "Little tool to scan and rebuild MAME (https://www.mamedev.org/) machine sets.",
     "homepage": "https://mamedev.emulab.it/clrmamepro/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://mamedev.emulab.it/clrmamepro/binaries/clrmame_v062.zip",
-            "hash": "ebba8f6dd44cee618d75cb41c2490407bf0543e220dc04e0396d2da6154a953e"
+            "url": "https://mamedev.emulab.it/clrmamepro/binaries/clrmame_v063.zip",
+            "hash": "472576d4af287e3d921bc54a8a7f40a7bebed446f65414d1d53d88be4cfb2d60"
         }
     },
     "bin": "clrmame.exe",
