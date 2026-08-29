@@ -9,7 +9,7 @@
             "hash": "92693355ee63c468386e98c79b0decb9428716c8c88fcb6a774260b1e25ab7ab"
         }
     },
-    "extract_dir": "target\\x86_64-pc-windows-gnu\\release",
+    "extract_dir": "target\\x86_64-pc-windows-gnullvm\\release",
     "bin": "oxyromon.exe",
     "env_set": {
         "OXYROMON_DATA_DIRECTORY": "$persist_dir"
