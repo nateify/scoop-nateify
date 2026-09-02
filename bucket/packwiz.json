@@ -1,12 +1,12 @@
 {
-    "version": "dfd8b68",
+    "version": "9066bf8",
     "description": "A command line tool for editing and distributing Minecraft modpacks, using a git-friendly TOML format. ",
     "homepage": "https://github.com/packwiz/packwiz",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/starxjys/packwiz/releases/download/nightly-dfd8b68/packwiz.exe",
-            "hash": "c35b767925030d8964c7fff87c30e7c8c6ec4efb38e42c4bf08b4282a6cd3baa"
+            "url": "https://github.com/starxjys/packwiz/releases/download/nightly-9066bf8/packwiz.exe",
+            "hash": "7a0f480d91550c6268685b92da33e38d3d35ea8596d9b6140be2b761e1cb6506"
         }
     },
     "bin": "packwiz.exe",
