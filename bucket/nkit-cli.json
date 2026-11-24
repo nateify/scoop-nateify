@@ -9,7 +9,17 @@
         "nkit.exe",
         "nkds.exe"
     ],
-    "persist": "nkit.yaml",
+    "persist": [
+        "dats",
+        "dedupe",
+        "fix",
+        "keys",
+        "logs",
+        "out",
+        "scans",
+        "temp",
+        "nkit.yaml"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Nanook/NKit/releases/download/v$version/NKit_win-x64_CLI_$version.zip"

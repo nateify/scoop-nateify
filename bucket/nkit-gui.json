@@ -16,6 +16,14 @@
         ]
     ],
     "persist": [
+        "dats",
+        "dedupe",
+        "fix",
+        "keys",
+        "logs",
+        "out",
+        "scans",
+        "temp",
         "nkds-ui.yaml",
         "nkit-ui.yaml"
     ],
