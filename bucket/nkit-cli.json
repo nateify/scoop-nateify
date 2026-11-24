@@ -3,15 +3,15 @@
     "description": "Multiplatform disc image processor & deduplicated game storage.",
     "homepage": "https://github.com/Nanook/NKit",
     "license": "MIT",
-    "url": "https://github.com/Nanook/NKit/releases/download/v3.2.2/NKit_win-x64_CLI_3.2.2.zip ",
+    "url": "https://github.com/Nanook/NKit/releases/download/v3.2.2/NKit_win-x64_CLI_3.2.2.zip",
     "hash": "0b04a03dcf5cc03cddfa815770ecc7285ba65fa36c519db029cab8582114e6f5",
     "bin": [
         "nkit.exe",
         "nkds.exe"
     ],
-    "persist": ["nkit.yaml"],
+    "persist": "nkit.yaml",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Nanook/NKit/releases/download/v$version/NKit_win-x64_CLI_$version.zip "
+        "url": "https://github.com/Nanook/NKit/releases/download/v$version/NKit_win-x64_CLI_$version.zip"
     }
 }
